@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            padding-top: 0;
+        }
+
+        .nav{
+    background-color: #123;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.nav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+        .code{
+            font-family: 'Courier New', Courier, monospace;
+            margin-left: 3%;
+
+        }
+        .assignment-details {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        .due-date {
+            font-weight: bold;
+        }
+        .description {
+            margin-bottom: 10px;
+        }
+        .status {
+            font-style: italic;
+        }
+        .assignment-body {
+            margin-top: 20px;
+        }
+        .actions {
+            margin-top: 20px;
+        }
+        .actions a {
+            display: inline-block;
+            margin-right: 10px;
+            text-decoration: none;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html" > HOME</a>
+        <a href="assignment_list.html" > ASSIGNMENTS</a>
+    </div> 
+
+<div class="assignment-details">
+    <h2>Course Code: EEC410</h2>
+    <h3>Title: Computer Programming For Engineers</h3>
+    <p class="due-date"> Date Submitted: 10th May 2024</p>
+    
+    <div class="assignment-body">
+        <p class="code">
+          program NewtonSecondLaw<br><br>
+    ! This program calculates the force on an object using Newton's second law of motion.<br><br>
+<br><br>
+    implicit none<br><br>
+    ! Declare variables<br><br>
+    real :: mass, acceleration, force<br><br>
+<br><br>
+    ! Input: Get mass and acceleration from the user<br><br>
+    print *, 'Enter the mass of the object (in kilograms): '<br><br>
+    read *, mass<br><br>
+    print *, 'Enter the acceleration of the object (in meters per second squared): '<br><br>
+    read *, acceleration<br><br>
+<br><br>
+    ! Process: Calculate the force<br><br>
+    force = mass * acceleration<br><br>
+<br><br>
+    ! Output: Display the force<br><br>
+    print *, 'The force on the object is: ', force, ' Newtons'<br><br>
+end program NewtonSeco<br><br>
+<br><br>
+</p><br><br>
+<hr><br><br>
+      <strong><p>Explanation of the logical steps used in writing the program:</p></strong>
+      <p>Now, let's go through the logical steps: 
+        <br><br> Variables: First, we declare the variables mass, acceleration, and force as real numbers using the real data type.
+<br><br>
+Input: We prompt the user to input the mass and acceleration of the object using print statements followed by read statements to capture the input from the user.
+<br><br>
+Calculation: We calculate the force using the formula force = mass * acceleration.
+<br><br>
+Output: Finally, we display the calculated force using a print statement.
+<br><br>
+This program will read the mass and acceleration from the user, calculate the force using Newton's second law, and then display the result. You can compile and run this program using a Fortran compiler
+
+
+</p>    </div>
+
+    <div class="actions">
+        <a href="assignment_list.html">Back to Assignments</a>
+    </div>
+</div>
+
+</body>
+</html>
